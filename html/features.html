@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#human-nav-bar").load("partials/navBar.html");
+        $(window).bind("load", function() {
+          $("#nav-feature").addClass("active");
+        });
+        $("#footer").load("partials/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="human-nav-bar"></div>
+    </header>
+    <main class="human-features-main">
+      <h1 class="text-center display-4">Features</h1>
+      <div class="container human-features-container">
+        <div class="row">
+          <div class="col">
+            <h3 class="font-weight-normal">Your Suggestion.</h3>
+            <p class="lead">
+              We want to hear what you want from us to be more human
+            </p>
+            <form class="human-features-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Explain your feature in less than 100 words"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="human-hidden">
+            <img src="78e826ca1b9351214dfdd5e47f7e2024.gif">
+            <p><i>loading</i></p>
+          </div>
+          </div>
+          <div class="col">
+            <div class="card human-features-suggestion">
+              <h5 class="card-header">Their suggestions</h5>
+              <div class="card-body">
+                <p class="lead">
+                  This is what peeps like you think will help one be more human
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Reduce Social Media by 10% each day
+                    <span class="badge badge-success"
+                      >Kripa, 2 seconds ago</span
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    Something : Dapibus ac facilisis in
+                  </li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/client.js"></script>
+    <div id="footer"></div>
+  </body>
+</html>
