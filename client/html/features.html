@@ -10,9 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#human-nav-bar").load("partials/navBar.html");
-        $(window).bind("load", function() {
+        $("#human-nav-bar").load("partials/navBar.html",function(){
           $("#nav-feature").addClass("active");
+        });
+        $(window).bind("load", function() {
+          
         });
         $("#footer").load("partials/footer.html");
       });
@@ -31,7 +33,7 @@
             <p class="lead">
               We want to hear what you want from us to be more human
             </p>
-            <form class="human-features-form">
+            <form class="human-features-form" id="featureForm">
               <div class="form-group">
                 <input
                   type="text"
@@ -46,11 +48,11 @@
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary" id="featureSubmitBtn">Submit</button>
             </form>
-            <div class="human-hidden">
-            <img src="78e826ca1b9351214dfdd5e47f7e2024.gif">
-            <p><i>loading</i></p>
+            <div id="featureloding" class="text-cener human-hidden">
+            <img src="/Assets/Loader.gif">
+            <p><i>Sending data to our folder...</i></p>
           </div>
           </div>
           <div class="col">
@@ -78,7 +80,7 @@
         </div>
       </div>
     </main>
-    <script src="../js/client.js"></script>
+    <script src="/js/features.js"></script>
     <div id="footer"></div>
   </body>
 </html>

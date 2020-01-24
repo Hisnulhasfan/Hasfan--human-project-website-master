@@ -8,7 +8,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
-      $("#human-nav-bar").load("partials/navBar.html");
+      $("#human-nav-bar").load("partials/navBar.html",function(){
+        $("#nav-pricing").addClass("active");
+      });
+      
       $("#footer").load("partials/footer.html");
     });
   </script>
