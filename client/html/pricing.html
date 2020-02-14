@@ -1,74 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <title>The Human Project</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#human-nav-bar").load("/html/partials/navbar.html", function(){
+          $("#nav-pricing").addClass("active");
+        });
+         
 
-<head>
-  <link rel="stylesheet" href="../css/bootstrap.css" />
-  <link rel="stylesheet" href="../css/custom.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#human-nav-bar").load("partials/navBar.html",function(){
-        $("#nav-pricing").addClass("active");
+       
       });
-      
-      $("#footer").load("partials/footer.html");
-    });
-  </script>
-</head>
-
-<body>
-  <header>
-    <div id="human-nav-bar"></div>
-  </header>
-  </div>
-  <main>
-    <h1 class="Pricing-center-display">Pricing</h1>
-    <p class="pricing-text">Quickly build an effective pricing table for your potential customers <br />with this
-      Bootstrap example.
-      It’s built with default Bootstrap components and utilities with <br />
-      little customization.</p>
-  </main>
-  <div class="container">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 shadow-sm">
-        <h5 class="card-header">Free</h5>
-        <div class="card-body">
-          <h5 class="card-title">$0 / mo</h5>
-          <p class="card-text">10 users included <br />
-            2GB storage <br />
-            E mail Support <br />
-            Help Center access</p>
-          <button type="button" class="btn btn-outline-primary">Sign Up for Free</button>
-        </div>
-        </div>
-
-        <div class="card mb-4 shadow-sm">
-          <h5 class="card-header">Pro</h5>
-          <div class="card-body">
-            <h5 class="card-title">$15 / mo</h5>
-            <p class="card-text">20 users included<br />
-              10 GB of storage <br />
-              Priority email Support <br />
-              Help Center access</p>
-            <a href="#" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-
-          <div class="card mb-4 shadow-sm">
-            <h5 class="card-header">Enterprise</h5>
-            <div class="card-body">
-              <h5 class="card-title">$29 / mo</h5>
-              <p class="card-text">30 users included <br />
-                15GB storage <br />
-                Phone and email Support <br />
-                Help Center access</p>
-              <a href="#" class="btn btn-primary">Contact us</a>
+    </script>
+    </head>
+    
+    <body>
+      <header>
+        <div id="human-nav-bar"></div>
+      </header>
+    <main>
+      <div class="text-center human-features-main">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead" style="margin-bottom: 55px;">What price are you willing to pay to become a better human?</p>
+        <div class="container ">
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+              </div>
             </div>
           </div>
         </div>
-  </div>
-  <div id="footer"></div>
-</body>
+    </main>
 
+    </body>
+
+    <footer></footer>
+  </body>
 </html>

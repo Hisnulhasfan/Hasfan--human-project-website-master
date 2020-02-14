@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <title>The Human Project</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!--importing jquery file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script>
       $(document).ready(function() {
-        $("#human-nav-bar").load("html/partials/navBar.html");
-        $("#footer").load("html/partials/footer.html");
+        $("#human-nav-bar").load("html/partials/navbar.html");
       });
     </script>
   </head>
@@ -21,16 +19,18 @@
     <header>
       <div id="human-nav-bar"></div>
     </header>
-    <main class="human-index-main">
-      <div class="text-center">
-        <h1 class="display-3">Making you human.</h1>
+    <main>
+      <div class="text-center human-index-div">
+        <h3 class="display-3">Making you human.</h3>
         <p class="lead">
           Today, we are more robot than human. Try out The Human Project and
-          start over from Square 1
+          start over from Square One.
         </p>
-        <button type="button" class="btn btn-secondary">Learn More</button>
+        <button type="button" class="btn btn-dark">Learn More</button>
       </div>
     </main>
-    <div id="footer"></div>
+    <footer class="text-center bg-dark fixed-bottom human-footer">
+      &copy All Rights Reserved. <i>The Human Project</i> 2019
+    </footer>
   </body>
 </html>

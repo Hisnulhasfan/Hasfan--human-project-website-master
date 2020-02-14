@@ -1,77 +1,33 @@
-/* Nav Bar Css */
+/* index.html css */
 
-.human-nav-right {
+.human-nav-bar {
   margin-left: 49%;
+}
+
+.human-index-div {
+  margin: 16%;
 }
 
 .human-footer {
   color: white;
-  padding: 12px;
+  padding: 10px;
 }
 
-.human-index-main {
-  margin-bottom: 18.05%;
-  margin-top: 16%;
-}
+/* features.html css */
 
-/* Features.html Css */
+.human-features-container {
+  margin-top: 3%;
+}
 
 .human-features-main {
   margin: 3.5%;
 }
 
-.human-features-container {
-  margin-top: 4.2%;
-}
-
-.human-features-suggestion {
-  min-height: 342px;
-}
-
 .human-features-form {
-  margin-right: 25%;
+  margin-right: 21%;
 }
 
-
-.pricing-text{
-  text-align: center;
-  font-size: 20px;
-  font-weight: 80;
-}
-
-.Pricing-center-display{
-  text-align: center;
-  margin-top: 5rem;
-  font-weight: 100;
-  font-size: 55px;
-}
-.AboutUs {
-  text-align: center;
-  font-size: 54px;
-  font-weight: 50;
-  
-}
-
-.human-contact {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
-
-.human-features-form {
-  margin-right: 70%;
-  flex: ;
-}
-
-.Image {
- height:400px;
- width: 600px;
-}
-
-.human-hidden {
-  display : none;
-}
-
-.display-4  {
-  line-height: 3;
+/* Common css */
+.human-removed {
+  display: none;
 }
