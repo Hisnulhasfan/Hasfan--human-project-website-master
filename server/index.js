@@ -16,17 +16,17 @@ app.get("/features", function(req, res) {
   var features = [
     {
       body: "Feature 1",
-      author: "Kate",
+      author: "Hasfan",
       time: Date.now()
     },
     {
       body: "Feature 2",
-      author: "Tom",
+      author: "Robert",
       time: Date.now()
     },
     {
       body: "Feature 3",
-      author: "Harry",
+      author: "Bruce",
       time: Date.now()
     }
   ];
