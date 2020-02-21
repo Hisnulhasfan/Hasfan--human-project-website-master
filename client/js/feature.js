@@ -2,11 +2,17 @@ var featureSubmitBtn = document.getElementById("featureSubmitBtn");
 var featureFrm = document.getElementById("featureFrm");
 var featureLoadingDiv = document.getElementById("featureLoadingDiv");
 
-featureSubmitBtn.addEventListener("click", function() {
+featureSubmitBtn.addEventListener("click", async function() {
   // Make the loader div visible
   featureLoadingDiv.classList.remove("human-removed");
   // Hide the form from the user
   featureFrm.classList.add("human-removed");
+  await onfeaturesubmit();
+  featureFrm.reset();
+  featureLoadingDiv.classList.add("human-removed");
+  featureFrm.classList.remove("human-removed");
+  await onfeatureload();
+
 });
 
 async function onfeatureload() {
@@ -28,6 +34,9 @@ async function onfeatureload() {
   */
 
   var featureList = document.getElementById("feature-list");
+
+  featureList.innerHTML = ""; 
+  
   for ( var i = 0 ; i < result.length; i++){
     var lieelement = document.createElement("li");
     lieelement.innerHTML =
@@ -35,6 +44,21 @@ async function onfeatureload() {
     lieelement.className = "list-group-item";
     featureList.appendChild(lieelement);
   }
+}
+
+  async function onfeaturesubmit () {
+  var response = await fetch("http://localhost:3000/features", {
+    method : "post",
+    headers : {
+      "content-type" : "application/json"
+    },
+    body : JSON.stringify({
+      name : document.getElementById("suggested-name").value,
+      feature : document.getElementById("suggested-feature").value
+    })
+  });
+
+  
 }
 
 onfeatureload();
